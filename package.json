@@ -1,0 +1,9 @@
+{
+  "name": "toml-merge",
+  "version": "0.1.0",
+  "main": "toml-merge.js",
+  "dependencies": {
+    "@iarna/toml": "^2.2.3",
+    "merge-options": "^2.0.0"
+  }
+}
