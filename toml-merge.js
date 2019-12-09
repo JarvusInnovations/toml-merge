@@ -11,6 +11,11 @@ const inputObjects = process.argv.slice(2).map(inputPath => {
     return TOML.parse(fs.readFileSync(inputPath, 'utf8'));
 });
 
+if (!inputObjects.length) {
+    console.error("Usage: toml-merge [file.toml...]");
+    process.exit(1);
+}
+
 const mergedObject = mergeOptions(...inputObjects);
 
 process.stdout.write(TOML.stringify(mergedObject));
