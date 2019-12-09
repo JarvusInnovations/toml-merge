@@ -1,6 +1,6 @@
 pkg_name=toml-merge
 pkg_origin=jarvus
-pkg_version="0.1.0"
+pkg_version="2.0.0"
 pkg_maintainer="Chris Alfano <chris@jarv.us>"
 pkg_upstream_url="https://github.com/JarvusInnovations/toml-merge"
 pkg_license=("Apache-2.0")
