@@ -1,6 +1,6 @@
 {
   "name": "toml-merge",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "toml-merge.js",
   "dependencies": {
     "@iarna/toml": "^2.2.3",
