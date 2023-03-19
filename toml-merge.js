@@ -6,6 +6,8 @@ const mergeOptions = require('merge-options');
 const inputObjects = process.argv.slice(2).map(inputPath => {
     if (inputPath == '-') {
         inputPath = '/dev/stdin';
+    } else if (!fs.existsSync(inputPath)) {
+        return { };
     }
 
     return TOML.parse(fs.readFileSync(inputPath, 'utf8'));
